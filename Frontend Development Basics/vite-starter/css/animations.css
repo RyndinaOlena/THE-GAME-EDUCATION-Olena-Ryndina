@@ -1,0 +1,43 @@
+/* Keyframe animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Utility animation classes */
+.fade-in {
+  opacity: 0;
+  animation: fade-in-up 1s ease forwards;
+}
+
+.fade-in-delay-1 {
+  opacity: 0;
+  animation: fade-in-up 1s ease forwards 0.2s;
+}
+
+.fade-in-delay-2 {
+  opacity: 0;
+  animation: fade-in-up 1s ease forwards 0.4s;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
