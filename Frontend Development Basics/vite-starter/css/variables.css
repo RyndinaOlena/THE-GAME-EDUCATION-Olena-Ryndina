@@ -1,0 +1,70 @@
+:root {
+  /* Color System */
+  --color-primary: #0071e3;
+  --color-primary-light: #2b8eff;
+  --color-primary-dark: #0058b0;
+  
+  --color-secondary: #86868b;
+  --color-secondary-light: #a1a1a6;
+  --color-secondary-dark: #6e6e73;
+  
+  --color-accent: #ff9f0a;
+  --color-accent-light: #ffb340;
+  --color-accent-dark: #e08600;
+  
+  --color-success: #34c759;
+  --color-success-light: #4cd964;
+  --color-success-dark: #28a745;
+  
+  --color-warning: #ff9f0a;
+  --color-warning-light: #ffb340;
+  --color-warning-dark: #e08600;
+  
+  --color-error: #ff3b30;
+  --color-error-light: #ff6b61;
+  --color-error-dark: #d63031;
+  
+  /* Neutral tones */
+  --color-background: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-text: #1d1d1f;
+  --color-text-secondary: #86868b;
+  --color-text-tertiary: #6e6e73;
+  --color-border: #d2d2d7;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  
+  /* Line Heights */
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+  
+  /* Spacing system (8px base) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 1rem;    /* 16px */
+  --space-4: 1.5rem;  /* 24px */
+  --space-5: 2rem;    /* 32px */
+  --space-6: 3rem;    /* 48px */
+  --space-7: 4rem;    /* 64px */
+  --space-8: 6rem;    /* 96px */
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;  /* 4px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 1rem;     /* 16px */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
