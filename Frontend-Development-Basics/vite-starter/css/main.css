@@ -1,0 +1,90 @@
+#main-content {
+  padding: var(--space-8) 0;
+  background-color: var(--color-surface);
+}
+
+.image-showcase {
+  margin-bottom: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.image-showcase.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  transition: transform var(--transition-slow);
+}
+
+.image-showcase:hover .feature-image {
+  transform: scale(1.02);
+}
+
+.content-description {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-description h2 {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+  line-height: var(--line-height-heading);
+}
+
+.content-description p {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: var(--space-5) 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: var(--space-4);
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+footer {
+  background-color: var(--color-text);
+  color: white;
+  padding: var(--space-5) 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
