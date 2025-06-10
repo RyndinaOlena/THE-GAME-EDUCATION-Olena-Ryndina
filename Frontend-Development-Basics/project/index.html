@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мій блокнот думок</title>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <h1 class="title">💭 Мій блокнот думок</h1>
+      <p class="subtitle">Зберігайте свої ідеї та роздуми</p>
+    </header>
+
+    <main class="main">
+      <section class="input-section">
+        <textarea id="thoughtInput" placeholder="Поділіться своєю думкою..." rows="4" maxlength="500"></textarea>
+        <div class="input-actions">
+          <span id="charCount" class="char-count">0/500</span>
+          <button id="saveButton" class="save-btn">
+            <span class="btn-text">Зберегти думку</span>
+            <span class="btn-icon">✨</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="thoughts-section">
+        <h2 class="thoughts-title">Мої думки</h2>
+        <div id="thoughtsList" class="thoughts-list">
+        </div>
+        <div id="emptyState" class="empty-state">
+          <p>Поки що немає збережених думок. Напишіть свою першу думку вище!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
