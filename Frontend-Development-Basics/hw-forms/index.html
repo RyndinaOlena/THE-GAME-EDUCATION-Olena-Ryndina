@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="/submit" method="post"
+            style="display: flex; align-items: start; justify-content: center; flex-direction: column; gap: 10px;">
+            <label for="name">Ім'я</label>
+            <input id="name" type="text" name="name" required />
+
+            <label for="secondName">Прізвище</label>
+            <input id="secondName" type="text" name="secondName" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+
+            <label for="password">Password</label>
+            <input id="email" type="password" name="password" required />
+            <div>
+                <p>Вибір курсу</p>
+                <select name="selectCource" required>
+                    <option value="">Frontend</option>
+                    <option value="">Backend</option>
+                    <option value="">UI/UX</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Стать:</p>
+                <label for="male">Жіноча</label>
+                <input type="radio" id="male" name="gender" value="male" />
+
+                <label id="female">Чоловіча</label>
+                <input type="radio" id="female" name="gender" value="female" />
+
+                <label id="isNot">Не вибрано</label>
+                <input type="radio" id="isNot" name="gender" value="isNot" />
+            </div>
+
+            <div><input type="checkbox" id="agree" />
+                <label for="agree">Я згоден(-на) з умовами</label>
+            </div>
+
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

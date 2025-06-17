@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contact</h1>
+    <a href="/Frontend-Development-Basics/hw-links/index.html">Головна</a>
+    <a href="/Frontend-Development-Basics/hw-links/about.html">Про нас</a>
+    <a href="#form">Заповнити форму</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum deserunt quos numquam rerum optio quisquam sit id
+        at! Consequuntur delectus doloremque ratione quasi perferendis at sapiente, animi quaerat eius totam.
+        Iure id recusandae assumenda dolorum similique maiores laudantium, veritatis nam, doloribus cum eum corrupti
+        tenetur possimus eligendi nisi reiciendis provident voluptatibus in quos animi ullam qui, minima laboriosam
+        fugiat. Repudiandae!
+        Eaque eligendi libero delectus, quidem doloremque eum aliquid deleniti dolores corporis quos possimus unde.
+        Voluptatem vero enim unde reiciendis pariatur blanditiis nesciunt quis officiis veniam ducimus, deleniti itaque
+        necessitatibus maxime!
+        Obcaecati alias deleniti repellendus cumque veritatis id. Repellendus adipisci vel incidunt voluptatibus quasi
+        expedita laudantium tenetur! Impedit, reiciendis voluptatem. Culpa maiores et, vitae exercitationem sit esse
+        libero nobis tempora ullam.
+        Eaque, saepe. Nesciunt quae et aspernatur perspiciatis fugiat necessitatibus consectetur tenetur. Voluptas,
+        commodi eaque laboriosam doloremque porro ipsam, a adipisci eius optio sunt similique et voluptate, suscipit
+        facilis blanditiis at!
+        Sequi et laudantium voluptatum, in ipsam quod iure quam nihil, suscipit accusamus eaque? Sit voluptatum
+        similique nam consequuntur quos, architecto natus commodi corporis impedit officia incidunt tempore ab? Eveniet,
+        magnam!
+        Impedit, ut officiis maxime ipsum quia minus sequi repellendus illum deleniti voluptatum vel aspernatur id rerum
+        voluptatem odit modi sit perspiciatis et voluptas deserunt quae? Aut qui sequi autem laudantium.
+        Doloribus ipsa maxime architecto obcaecati, repellendus odit omnis itaque sint laborum excepturi dolores
+        aspernatur alias pariatur dicta iusto rerum rem ratione temporibus unde. Eveniet debitis dolorum sit illo fuga
+        nihil?
+        Soluta accusantium neque iste voluptatum aut? Molestiae quasi veniam vel dolorum nam deserunt eveniet
+        perspiciatis soluta corporis porro aliquid explicabo, doloremque tempora tempore ducimus expedita magni mollitia
+        enim, fugit ipsum?
+        Totam provident eveniet odit rerum omnis a, nostrum cupiditate iste praesentium porro ullam eligendi
+        consequuntur ea minus neque corporis veniam reprehenderit quaerat atque accusantium quasi. Impedit suscipit
+        tempore autem tempora!</p>
+    <div>
+        <form action="/submit" method="post"
+            style="display: flex; align-items: start; justify-content: center; flex-direction: column; gap: 10px;"
+            id="form">
+            <label for="name">Ім'я</label>
+            <input id="name" type="text" name="name" required />
+
+            <label for="secondName">Прізвище</label>
+            <input id="secondName" type="text" name="secondName" required />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required />
+
+            <label for="password">Password</label>
+            <input id="email" type="password" name="password" required />
+            <div>
+                <p>Вибір курсу</p>
+                <select name="selectCource" required>
+                    <option value="">Frontend</option>
+                    <option value="">Backend</option>
+                    <option value="">UI/UX</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Стать:</p>
+                <label for="male">Жіноча</label>
+                <input type="radio" id="male" name="gender" value="male" />
+
+                <label id="female">Чоловіча</label>
+                <input type="radio" id="female" name="gender" value="female" />
+
+                <label id="isNot">Не вибрано</label>
+                <input type="radio" id="isNot" name="gender" value="isNot" />
+            </div>
+
+            <div><input type="checkbox" id="agree" />
+                <label for="agree">Я згоден(-на) з умовами</label>
+            </div>
+
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

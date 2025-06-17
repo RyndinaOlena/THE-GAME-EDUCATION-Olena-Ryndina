@@ -1,0 +1,26 @@
+.card_section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 50px;
+    padding: 20px;
+}
+
+.card_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-sale {
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: red;
+}
+
+.card_item_img {
+    max-width: 240px;
+}

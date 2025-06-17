@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Great Vibes", cursive;
+}
+
+.css_block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(248, 183, 183);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.css_block_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.css_block_content_text {
+    font-weight: 500;
+    margin: 50px 20px;
+}
+
+
+.css_block_btn {
+    padding: 20px 40px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(191, 134, 244);
+    color: white;
+}

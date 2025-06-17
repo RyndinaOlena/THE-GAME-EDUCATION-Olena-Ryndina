@@ -1,0 +1,31 @@
+.card_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.card_item {
+    text-align: center;
+    padding: 50px;
+}
+
+.card_title {
+    text-align: center;
+}
+
+.card_bg-red {
+    background-color: red;
+}
+
+.card_bg-black {
+    background-color: black;
+    color: white;
+}
+
+.card_bg-blue {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+}
