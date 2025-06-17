@@ -1,0 +1,124 @@
+.media_title {
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .media_title {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .media_title {
+        font-style: 100px;
+    }
+}
+
+.media_block {
+    display: grid;
+    gap: 20px;
+    place-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+    .media_block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .media_block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.media_img {
+    max-width: 400px;
+    transition: box-shadow 1s ease;
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+    .media_img:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(98, 0, 255);
+    }
+}
+
+.media_card_section {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+    .media_card_section {
+        padding: 30px;
+    }
+}
+
+.media_card_text {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .media_card_text {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .media_card_text {
+        font-size: 66px;
+    }
+}
+
+.media_card_img {
+    max-width: 200px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .media_card_img {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .media_card_text {
+        max-width: 600px;
+    }
+}
+
+/* menu */
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    background: linear-gradient(rgba(0, 255, 247, 0.314), blue, rgb(58, 0, 128));
+}
+
+@media (max-width: 768px) {
+    .menu_list {
+        display: none;
+    }
+}
+
+
+.menu_link {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,40 @@
+.decoration_block {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.decoration_title {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to top, #5fffffa6, #0c018552);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.decoration_img {
+    max-width: 400px;
+    min-height: auto;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 30px 30px 30px rgba(96, 129, 226, 0.8);
+    border-radius: 12px;
+}
+
+.decoration_btn {
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 12px;
+    min-height: auto;
+    border: none;
+    background: linear-gradient(to right, #5fa7ff, #7be4fe);
+    color: white;
+}
+
+.decoration_bg {
+    max-width: 400px;
+    height: 200px;
+    border-radius: 12px;
+    min-height: auto;
+    background: linear-gradient(to right, #012a5c, #7be4fe);
+}
