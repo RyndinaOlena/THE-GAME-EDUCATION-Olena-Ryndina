@@ -1,0 +1,15 @@
+{
+  "name": "the-game-education-olena-ryndina",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch classes/scss/style.scss classes/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

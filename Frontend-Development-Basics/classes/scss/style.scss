@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.2px solid white;
+
+    &_nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        &_item {
+            padding: 0 30px;
+            list-style: none;
+            align-items: center;
+            padding: 28px;
+            border-right: 0.2px solid #ccc;
+
+            &_link {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 375px;
+        max-height: 50px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 650px) {
+        .logo {
+            max-width: 275px;
+            max-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header_nav {
+        display: none;
+    }
+}
+
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    span {
+        display: block;
+        height: 2px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+}
+
+.image_wrapper {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+
+    &_base {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-image: url('../img/drops-148870_1280.png');
+        background-repeat: repeat;
+        background-size: 40px 30px;
+        background-position: top left;
+
+        transform: translateY(-100%);
+        opacity: 0;
+        animation: slideDown 2s ease forwards;
+        animation-delay: 0.5s;
+    }
+}
+
+@media (min-width: 768px) {
+    .image_wrapper_overlay {
+        background-size: 60px 60px;
+    }
+
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+}
+
+// running stroke//
+
+.marquee {
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #0717f6;
+    color: #fff;
+    white-space: nowrap;
+
+    &_content {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 10s linear infinite;
+    }
+
+    &_text {
+        padding: 10px;
+    }
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+// company_info
+.company_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width:768px) {
+        .company_info {
+            flex-direction: row;
+        }
+    }
+
+    &_block {
+        max-width: 768px;
+        width: 100%;
+        height: auto;
+
+        &_img {
+            width: 100%;
+        }
+    }
+
+    &_description {
+        width: 100%;
+        padding: 40px;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+
+        &_block {
+            width: 50%;
+        }
+
+        &_description {
+            width: 50%;
+        }
+    }
+}
