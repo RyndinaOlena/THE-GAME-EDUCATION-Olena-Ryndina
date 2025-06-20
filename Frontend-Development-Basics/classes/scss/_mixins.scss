@@ -1,0 +1,32 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin classes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+@mixin block {
+    max-width: 768px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+@mixin img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@mixin description {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}

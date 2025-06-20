@@ -11,11 +11,25 @@
 
 <body>
     <header class="header">
-        <button class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" hidden />
+
+        <label for="burger-toggle" class="burger-icon" aria-label="Меню">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="burger-icon__close">✕</div>
+        </label>
+
+        <div class="modal-menu">
+            <nav class="modal-menu__content">
+                <a href="#">Головна</a>
+                <a href="#">Про нас</a>
+                <a href="#">Контакти</a>
+            </nav>
+        </div>
+
         <nav>
             <ul class="header_nav">
                 <li class="header_nav_item"><a class="header_nav_item_link" href="#">Classes</a></li>
@@ -25,22 +39,22 @@
             </ul>
         </nav>
         <div>
-            <!-- <img class="logo" src="../classes/img/Movement Studios.-2.png" /> -->
+            <img class="logo" src="../classes/img/Movement Studios.-2.png" />
         </div>
     </header>
     <main>
-        <div class="image_wrapper">
+        <section class="image_wrapper">
             <img class="image_wrapper_base" src="/Frontend-Development-Basics/classes/img/Header section-1.png" />
             <div class="image_wrapper_overlay"></div>
-        </div>
-        <div class="marquee">
+        </section>
+        <section class="marquee">
             <div class="marquee_content">
                 <span class="marquee_text">Fluid. Expressive. Powerful. Move with us!</span>
                 <span class="marquee_text">Masterclass Alert: Guest Choreographer Workshop This Saturday</span>
                 <span class="marquee_text">New Contemporary Dance Classes Now Enrolling – Secure Your Spot</span>
             </div>
-        </div>
-        <div class="company_info">
+        </section>
+        <section class="company_info">
             <div class="company_info_block">
                 <img class="company_info_block_img" src="./img/Title container.png" />
             </div>
@@ -51,9 +65,10 @@
                     Whether you’re a complete beginner eager to explore the world of modern dance, a seasoned performer
                     looking to refine
                     your technique, or simply someone who finds joy in moving, you’ll find a home here.</p>
+                <button class="company_info_description_btn">About Us</button>
             </div>
-        </div>
-        <div class="company_info">
+        </section>
+        <section class="company_info">
             <div class="company_info_block">
                 <img class="company_info_block_img" src="./img/classes.png" />
             </div>
@@ -62,8 +77,63 @@
                 <p>Get your groove on with Hip Hop, find your rhythm in Jazz, and explore connection in Contact
                     Improvisation. Movement
                     Studio offers a diverse range of classes for every dancer.</p>
+                <button class="company_info_description_btn">Reserve your spot</button>
             </div>
-        </div>
+
+        </section>
+        <section class="company_info">
+            <div class="company_info_description support">
+                <h3>Our Founders</h3>
+                <p>"Find your flow, and dance your truth."</p>
+                <p>— Sophia Bennett</p>
+            </div>
+            <div class="company_info_block">
+                <img class="company_info_block_img" src="./img/founder-image1.png" />
+
+                <div class="company_info_block_employes ">
+                    <h3 class="company_info_block_employes_title">Alisa Morris</h3>
+                    <p class="company_info_block_employes_text">Founder & Program Manager</p>
+                </div>
+                <img class="company_info_block_img" src="./img/founder-image2.png" />
+
+                <div class="company_info_block_employes bg">
+                    <h3 class="company_info_block_employes_title">Sophia Bennett</h3>
+                    <p class="company_info_block_employes_text">Founder & Instructor</p>
+                </div>
+            </div>
+        </section>
+        <section class="motivation">
+            <p>Whether you're a beginner looking to explore expressive movement or an advanced dancer ready to refine
+                your technique,
+                we have classes for you!</p>
+            <button class="motivation_btn">Reserve your spot</button>
+        </section>
+        <section class="contact">
+            <h2 class="contact_title">Mov. Stu.</h2>
+            <p class="contact_text">Email:<br />
+                hello@figma.com</p>
+            <p class="contact_text">Instagram:<br />
+                @figma</p>
+            <p class="contact_text">Facebook:<br />
+                Figma</p>
+            <p class="contact_text">Address:</p>
+            <p class="contact_text">
+                224 Candyland Lane, Brooklyn, NY<br />
+                (646) 555-4567 </p>
+            <p class="contact_text">Movement Studios©<br />
+                2025 All Rights Reserved</p>
+        </section>
+        <footer class="footer">
+            <div class="footer_block blue">
+                <h2 class="footer_block_title">Our Socials</h2>
+            </div>
+            <div class="footer_block black">
+                <h2 class="footer_block_title">Email us</h2>
+            </div>
+            <div class="footer_block violet">
+                <h2 class="footer_block_title">Book with us</h2>
+            </div>
+        </footer>
     </main>
 </body>
 

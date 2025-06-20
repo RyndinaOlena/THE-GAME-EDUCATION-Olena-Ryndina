@@ -41,11 +41,17 @@ body {
 .header .logo {
   max-width: 375px;
   max-height: 50px;
-  padding-right: 30px;
+  padding: 10px;
 }
 @media (max-width: 650px) {
   .header .logo {
-    max-width: 275px;
+    max-width: 175px;
+    max-height: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .header .logo {
+    max-width: 125px;
     max-height: 40px;
   }
 }
@@ -55,29 +61,84 @@ body {
     display: none;
   }
 }
-.burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 22px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-.burger span {
-  display: block;
-  height: 2px;
-  background-color: #ffffff;
-  border-radius: 2px;
+.burger-toggle {
+  display: none;
 }
 
+.burger-icon {
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
 @media (min-width: 768px) {
-  .burger {
+  .burger-icon {
     display: none;
   }
 }
+.burger-icon .burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+}
+.burger-icon .burger span {
+  display: block;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+.burger-icon .burger-icon__close {
+  display: none;
+  font-size: 28px;
+  color: white;
+  line-height: 1;
+}
+
+.burger-toggle:checked + .burger-icon .burger {
+  display: none;
+}
+.burger-toggle:checked + .burger-icon .burger-icon__close {
+  display: block;
+  position: fixed;
+}
+
+.modal-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease;
+  z-index: 1000;
+}
+.modal-menu__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+.modal-menu__content a {
+  color: white;
+  text-decoration: none;
+}
+.modal-menu__content a:hover {
+  color: aqua;
+}
+
+.burger-toggle:checked ~ .modal-menu {
+  top: 0;
+}
+
 .image_wrapper {
   position: relative;
   width: 100%;
@@ -150,6 +211,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
+  border-top: 0.2px solid black;
+}
+.company_info_block_employes {
+  margin: 0;
+  padding: 20px;
+  background-color: #D900FF;
+  color: white;
+}
+.company_info_block_employes_title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.company_info_block_employes_text {
+  margin: 0;
+  padding: 0;
+}
+.company_info_block_employes.bg {
+  background-color: #D0FBF9;
+  color: black;
 }
 @media (min-width: 768px) {
   .company_info .company_info {
@@ -160,13 +242,30 @@ body {
   max-width: 768px;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 .company_info_block_img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .company_info_description {
   width: 100%;
   padding: 40px;
+  box-sizing: border-box;
+}
+.company_info_description_btn {
+  padding: 10px 16px;
+  background-color: #0717f6;
+  border: none;
+  color: white;
+}
+.company_info_description.support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .company_info {
@@ -178,4 +277,61 @@ body {
   .company_info_description {
     width: 50%;
   }
+  .company_info_description_btn {
+    padding: 18px 26px;
+    background-color: #0717f6;
+    border: none;
+    color: white;
+  }
+}
+
+.motivation {
+  background-color: blue;
+  padding: 110px 44px;
+  color: white;
+  font-size: 29px;
+}
+.motivation_btn {
+  padding: 18px 26px;
+  border: none;
+  background-color: #D0FBF9;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  padding: 30px;
+  background-color: #D0FBF9;
+}
+.contact_title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+}
+.contact_text {
+  line-height: 1.7;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer_block {
+  color: white;
+  padding: 30px 30px 124px 30px;
+}
+.footer_block_title {
+  margin: 0;
+}
+
+.footer_block.blue {
+  background-color: blue;
+}
+
+.footer_block.black {
+  background-color: black;
+}
+
+.footer_block.violet {
+  background-color: violet;
 }/*# sourceMappingURL=style.css.map */
