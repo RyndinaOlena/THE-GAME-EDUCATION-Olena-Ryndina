@@ -1,0 +1,16 @@
+# Кеш та системні файли
+.DS_Store
+*.log
+
+# Sass sourcemaps
+*.map
+
+# Папки збірки
+dist/
+build/
+
+# Node
+node_modules/
+
+# VSCode налаштування
+.vscode/
