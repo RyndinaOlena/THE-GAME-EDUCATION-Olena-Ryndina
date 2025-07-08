@@ -1,0 +1,28 @@
+.title {
+  color: white;
+  background: linear-gradient(to right, black, blue);
+  text-align: center;
+}
+ul.projects {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.projects li {
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, black, blue);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: linear-gradient(to right, navy, cyan);
+}
